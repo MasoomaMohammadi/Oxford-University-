@@ -1,0 +1,9 @@
+.buy-btn{
+  color: wheat;
+  text-decoration: none;
+}
+
+.buy-btn:hover {
+  color: black;
+}
+

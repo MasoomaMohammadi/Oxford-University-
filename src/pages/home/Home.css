@@ -1,0 +1,16 @@
+.gap {
+  padding-right: 1rem;
+}
+
+.img {
+  border-radius: 5px;
+}
+
+.img:hover{
+  scale: 1.1;
+}
+
+.text {
+  cursor: pointer;
+}
+
