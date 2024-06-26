@@ -25,24 +25,24 @@ function Course() {
             <p style={{ textAlign: "justify" }}>{courseInfo.paragraph}</p>
           </Col>
         </Row>
-        <Row className="my-5 mx-1 flex-img">
+        <Row className="my-5 flex-img">
           <Col xs={12} md={4} className="mt-3">
             <Image
-              style={{ width: "23.5rem", height: "25rem" }}
+              style={{ width: "23.5rem", height: "23.5rem" }}
               src={courseInfo.img1}
               thumbnail
             />
           </Col>
           <Col xs={12} md={4} className="mt-3">
             <Image
-              style={{ width: "23.5rem", height: "25rem" }}
+              style={{ width: "23.5rem", height: "23.5rem" }}
               src={courseInfo.img2}
               thumbnail
             />
           </Col>
           <Col xs={12} md={4} className="mt-3">
             <Image
-              style={{ width: "23.5rem", height: "25rem" }}
+              style={{ width: "23.5rem", height: "23.5rem" }}
               src={courseInfo.img3}
               thumbnail
             />
