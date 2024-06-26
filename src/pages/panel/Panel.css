@@ -1,0 +1,10 @@
+.panel-text {
+  color: #000;
+  text-align: center;
+  align-items: center;
+  margin-top: 150px; 
+  background-color: aliceblue;
+  opacity: 80%;
+  padding: 24px 0;
+  border-radius: 5px;
+}

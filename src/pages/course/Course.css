@@ -1,4 +1,18 @@
 /* .imgCard {
 padding-left: 200px;
 } */
+/* 
+.flex-img {
+  display: flex;
+  gap: 20px;
+}
+
+@media(max-width: 768px){
+  .flex-img {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+} */
+
 

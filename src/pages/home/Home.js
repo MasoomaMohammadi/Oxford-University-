@@ -1,7 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import MyNavbar from "../../compounents/navbar/Navbar";
 import "./Home.css";
-import homeImage from "../../assets/images/oxford-1.jpeg";
 import homeImage2 from "../../assets/images/ben-seymour-nqBUTBsDQNM-unsplash.jpg";
 import CourseItems from "../../compounents/course/CourseItems";
 import { useState } from "react";

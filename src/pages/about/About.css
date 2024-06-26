@@ -1,0 +1,92 @@
+.aboutContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.svgCollage {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.collage-img {
+  border-radius: 5px;
+  margin: 1rem auto;
+  box-shadow: 0px 2px 0px 0px #31524d,
+}
+
+.bodyCollage {
+  background-color: #f2f3f5;
+  overflow: hidden;
+}
+
+.nameCollage {
+  border-bottom: 2px solid #020234;
+  padding: 5px;
+  color: block;
+}
+
+.collageButton {
+  width: 240px;
+  height: 35px;
+  display: block;
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 0px #4a6fc5;
+  padding-top: 6px;
+  margin: 1rem auto;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: #4a6fc5;
+  background-image: linear-gradient(top, #4a6fc5, #3111);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: inset 0px 1px 0px #4a6fc5, 0px 5px 0px 0px #17233e,
+    0px 10px 5px #999;
+}
+
+.collageButton:active {
+  top: 3px;
+  box-shadow: inset 0px 1px 0px #4a6fc5, 0px 2px 0px 0px #31524d,
+    0px 5px 3px #999;
+}
+
+.textCollage {
+  margin:1.5rem auto 3rem auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0px #d1cccc;
+}
+
+/* ================ */
+@media (max-width: 768px){
+.svgCollage {
+  display: flex;
+  gap: 1.5rem;
+}
+}
+
+@media (max-width: 375px){
+.svgCollage {
+  display: flex;
+  gap: 10px;
+}
+}
+
+@media (max-width: 320px){
+.svgCollage {
+  display: flex;
+gap: 0;
+}
+
+}

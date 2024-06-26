@@ -1,16 +1,24 @@
-import './Navbar.css';
+import { useState } from "react";
+import "./Navbar.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+import { isLogin } from "../../utils";
 
 function MyNavbar() {
-  const expand = 'md'
+  const [loginStatus, setLoginStatus] = useState(isLogin() ? "خروج" : "ورود");
+  const logoutHandler = () => {
+    document.cookie =
+      "username=masoma; expires=Thu, 01 Jan 2022 00:00:00 UTC; path=/;";
+    setLoginStatus("خروج");
+  };
+  const expand = "md";
   return (
     <>
       <Navbar
-        style={{ backgroundColor: "#629DE4" }}
+        style={{ backgroundColor: "#9194fc" }}
         key={expand}
         expand={expand}
         className="mb-3"
@@ -39,7 +47,7 @@ function MyNavbar() {
                   صفحه اصلی
                 </NavLink>
                 <NavLink to="/about" className="nav-link">
-                  دانشکده ها{" "}
+                  دانشکده ها
                 </NavLink>
                 <NavLink to="/article" className="nav-link">
                   مقالات
@@ -47,9 +55,19 @@ function MyNavbar() {
                 <NavLink to="/panel" className="nav-link">
                   پنل
                 </NavLink>
-                <NavLink to="/login" className="nav-link">
-                  ورود
-                </NavLink>
+                {isLogin() ? (
+                  <NavLink
+                    onClick={logoutHandler}
+                    to="/login"
+                    className="nav-link"
+                  >
+                    {loginStatus}
+                  </NavLink>
+                ) : (
+                  <NavLink to="/login" className="nav-link">
+                    {loginStatus}
+                  </NavLink>
+                )}
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
@@ -57,6 +75,6 @@ function MyNavbar() {
       </Navbar>
     </>
   );
-};
+}
 
 export default MyNavbar;

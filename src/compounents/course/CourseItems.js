@@ -9,10 +9,14 @@ function CourseItems({id,title, img, text}) {
       <Card>
         <Card.Img variant="top" src={img} />
         <Card.Body>
-          <Card.Title>{title}</Card.Title>
+          <Card.Title>
+            <h4>{title}</h4>
+          </Card.Title>
           <Card.Text>{text}</Card.Text>
           <Button variant="primary">
-            <Link to={`/course/${id}`} className="buy-btn">اطلا عات بیشتر </Link>
+            <Link to={`/course/${id}`} className="buy-btn">
+              اطلا عات بیشتر
+            </Link>
           </Button>
         </Card.Body>
       </Card>
