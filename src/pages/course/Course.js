@@ -25,7 +25,7 @@ function Course() {
             <p style={{ textAlign: "justify" }}>{courseInfo.paragraph}</p>
           </Col>
         </Row>
-        <Row className="m-5 flex-img">
+        <Row className="my-5 mx-1 flex-img">
           <Col xs={12} md={4} className="mt-3">
             <Image
               style={{ width: "23.5rem", height: "25rem" }}
