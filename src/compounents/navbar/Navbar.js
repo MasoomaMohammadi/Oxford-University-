@@ -38,7 +38,7 @@ function MyNavbar() {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                Offcanvas
+                دانشکاه آکسفورد
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
