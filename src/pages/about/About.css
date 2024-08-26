@@ -54,6 +54,11 @@
     0px 10px 5px #999;
 }
 
+.link  {
+  text-decoration: none;
+  color: #fff;
+}
+
 .collageButton:active {
   top: 3px;
   box-shadow: inset 0px 1px 0px #4a6fc5, 0px 2px 0px 0px #31524d,

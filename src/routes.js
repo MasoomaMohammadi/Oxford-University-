@@ -10,7 +10,7 @@ import { collageInfo } from "./dataCarcoul";
 
 const router = [
   { path: "/", element: <Home /> },
-  { path: "/about", element: <About collageInfo={collageInfo}/> },
+  { path: "/about", element: <About collageInfo={collageInfo} /> },
   {
     path: "/article/*",
     element: <Article />,
@@ -81,8 +81,22 @@ const router = [
   },
   { path: "/course/:courseId", element: <Course /> },
   { path: "/login", element: <Login /> },
-  { path: "/panel", element: <PrivateRoute><Panel/></PrivateRoute>},
-  { path: "/setting", element: <PrivateRoute><Setting/></PrivateRoute> },
+  {
+    path: "/panel",
+    element: (
+      <PrivateRoute>
+        <Panel />
+      </PrivateRoute>
+    ),
+  },
+  {
+    path: "/setting",
+    element: (
+      <PrivateRoute>
+        <Setting />
+      </PrivateRoute>
+    ),
+  },
 ];
 
 export default router;

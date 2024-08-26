@@ -5,8 +5,6 @@ import Footer from "../../compounents/footer/Footer";
 import svgL from '../../assets/images/arrow-left-square-fill.svg';
 import svgR from '../../assets/images/arrow-right-square-fill.svg';
 import { useState } from "react";
-import bgAbout from '../../assets/images/intar...jpg'
-// import { collageInfo } from "../../dataCarcoul";
 import React from "react";
 
 
@@ -23,18 +21,6 @@ function About({collageInfo}) {
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % collageInfo.length);
   };
-
-  // const showInfo = () => {
-  //   setCurrentIndex
-  // }
-
-  // ==================================
-  //  const backgroundImageStyle2 = {
-  //    backgroundImage: `url(${bgAbout})`,
-  //    backgroundSize: "cover",
-  //    backgroundRepeat: "no-repeat",
-  //    minHeight: "100vh", 
-  //  };
   return (
     <div className="bodyCollage" >
       <MyNavbar />

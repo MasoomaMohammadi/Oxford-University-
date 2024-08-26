@@ -47,7 +47,7 @@ function MyNavbar() {
                   صفحه اصلی
                 </NavLink>
                 <NavLink to="/about" className="nav-link">
-                  دانشکده ها
+                  کالج‌ ها 
                 </NavLink>
                 <NavLink to="/article" className="nav-link">
                   مقالات
